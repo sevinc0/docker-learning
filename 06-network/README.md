@@ -1,18 +1,19 @@
-# Docker Network
+# Docker Network Kullanımı
 
-## Purpose
+## Amaç
 
-Learn how containers communicate with each other.
+Docker container'larının aynı ağ üzerinde birbirleriyle iletişim kurmasını öğrenmek.
 
-## Commands
+## Kullanılan Komutlar
 
 ```bash
 docker network create demo-network
 docker network inspect demo-network
 ```
 
-## What I Learned
+## Öğrendiklerim
 
-- Docker Bridge Network
-- Container Communication
-- DNS Resolution
+- **Docker Bridge Network** yapısını ve çalışma mantığını
+- Container'ların aynı ağ üzerinden birbirleriyle iletişim kurmasını
+- **DNS Resolution** sayesinde container isimleriyle birbirlerine erişebilmelerini
+- `docker network inspect` komutu ile ağın yapılandırmasını görüntülemeyi
