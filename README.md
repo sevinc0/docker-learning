@@ -1,13 +1,13 @@
-# Docker Learning
+# Docker Öğrenme Projesi
 
-This repository contains my Docker practice projects.
+Bu repo, Docker öğrenme sürecimde yaptığım uygulamaları ve hazırladığım dokümanları içermektedir.
 
-## Completed Topics
+## İçerik
+- Basit bir uygulamayı container olarak çalıştırma
+- Dockerfile yazma
+- Image build etme
+- Container loglarını inceleme
+- Volume kullanma
+- Docker network mantığını test etme
+- Docker Compose ile birden fazla servisi çalıştırma
 
-- [x] Run a Docker Container
-- [ ] Dockerfile
-- [ ] Build Image
-- [ ] Container Logs
-- [ ] Volume
-- [ ] Network
-- [ ] Docker Compose
