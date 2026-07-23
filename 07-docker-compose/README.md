@@ -1,23 +1,25 @@
-# Docker Compose
+# Docker Compose Kullanımı
 
-## Purpose
+## Amaç
 
-Run multiple Docker services using docker-compose.
+Birden fazla Docker servisini **docker-compose.yml** dosyası kullanarak tek komutla çalıştırmayı ve yönetmeyi öğrenmek.
 
-## Files
+## Kullanılan Dosyalar
 
 - docker-compose.yml
 - index.html
 
-## Commands
+## Kullanılan Komutlar
 
 ```bash
 docker compose up -d
 docker compose down
 ```
 
-## What I Learned
+## Öğrendiklerim
 
-- Docker Compose
-- Multi-container applications
-- Volume mapping
+- **Docker Compose** kullanarak birden fazla container'ı yönetmeyi
+- Çoklu container uygulamalarını (Multi-container Applications) tek komutla başlatmayı ve durdurmayı
+- **Volume Mapping** ile verileri paylaşmayı ve kalıcı hale getirmeyi
+- `docker compose up -d` komutu ile servisleri arka planda çalıştırmayı
+- `docker compose down` komutu ile servisleri durdurup kaldırmayı
