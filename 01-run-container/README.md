@@ -1,10 +1,10 @@
-# Run Docker Container
+# Docker Container Çalıştırma
 
-## Purpose
+## Amaç
 
-Learn how to run a Docker container using the official Nginx image.
+Resmi Nginx image'ını kullanarak bir Docker container'ını çalıştırmayı öğrenmek.
 
-## Commands
+## Kullanılan Komutlar
 
 ```bash
 docker run -d -p 8080:80 --name nginx-container nginx
@@ -13,10 +13,11 @@ docker stop nginx-container
 docker rm nginx-container
 ```
 
-## What I Learned
+## Öğrendiklerim
 
-- Pull Docker images
-- Run containers
-- Stop containers
-- Remove containers
-- Port mapping
+- Docker Hub'dan image indirme
+- Docker container oluşturma ve çalıştırma
+- Çalışan container'ları görüntüleme
+- Container durdurma
+- Container silme
+- Port yönlendirme (Port Mapping)
