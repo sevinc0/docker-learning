@@ -1,19 +1,19 @@
-# Container Logs
+# Container Loglarını Görüntüleme
 
-## Purpose
+## Amaç
 
-Learn how to inspect Docker container logs.
+Docker container'larının loglarını görüntülemeyi ve olası hataları incelemeyi öğrenmek.
 
-## Commands
+## Kullanılan Komutlar
 
 ```bash
 docker logs mywebsite-container
 docker logs -f mywebsite-container
 ```
 
-## What I Learned
+## Öğrendiklerim
 
-- View logs
-- Follow logs in real time
-- Troubleshooting
-
+- `docker logs` komutu ile container loglarını görüntülemeyi
+- `docker logs -f` komutu ile logları gerçek zamanlı takip etmeyi
+- Loglar sayesinde hata ayıklama (Troubleshooting) yapmayı
+- Çalışan uygulamanın durumunu loglar üzerinden kontrol etmeyi
