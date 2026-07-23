@@ -1,0 +1,53 @@
+# Virtual Machine ve Container Farkları
+
+## Virtual Machine (VM)
+
+Virtual Machine (VM), fiziksel bir bilgisayar üzerinde çalışan sanal bilgisayardır. Her VM kendi işletim sistemine sahiptir ve **Hypervisor** adı verilen yazılım tarafından yönetilir.
+
+### Avantajları
+
+- Güçlü izolasyon sağlar.
+- Farklı işletim sistemleri çalıştırılabilir.
+- Güvenliği yüksektir.
+
+### Dezavantajları
+
+- Fazla RAM kullanır.
+- Fazla disk alanı kullanır.
+- Açılışı yavaştır.
+
+---
+
+## Container
+
+Container, uygulamaları gerekli bağımlılıklarıyla birlikte paketleyen hafif sanallaştırma teknolojisidir. Docker Engine üzerinde çalışır ve host işletim sistemi çekirdeğini paylaşır.
+
+### Avantajları
+
+- Hafiftir.
+- Çok hızlı başlar.
+- Az kaynak tüketir.
+- Taşınabilirdir.
+
+### Dezavantajları
+
+- Aynı işletim sistemi çekirdeğini paylaşırlar.
+- Virtual Machine kadar güçlü izolasyon sağlamaz.
+
+---
+
+## Karşılaştırma
+
+| Özellik | Virtual Machine | Container |
+|---------|-----------------|-----------|
+| İşletim Sistemi | Her VM kendi işletim sistemine sahiptir. | Host işletim sistemi çekirdeğini paylaşır. |
+| Kaynak Kullanımı | Fazladır. | Daha düşüktür. |
+| Başlatma Süresi | Daha uzundur. | Çok hızlıdır. |
+| Performans | Daha düşüktür. | Daha yüksektir. |
+| Taşınabilirlik | Daha sınırlıdır. | Oldukça yüksektir. |
+
+---
+
+## Sonuç
+
+Virtual Machine'ler tam işletim sistemi gerektiren senaryolar için uygundur. Container'lar ise hafif yapıları, hızlı çalışmaları ve kolay taşınabilir olmaları sayesinde günümüzde özellikle **DevOps**, **Cloud Computing** ve **Mikroservis** mimarilerinde yaygın olarak kullanılmaktadır.
