@@ -1,0 +1,83 @@
+# Docker Temel Komutları
+
+Bu dokümanda Docker'da en sık kullanılan temel komutlar ve açıklamaları yer almaktadır.
+
+## Docker Bilgileri
+
+| Komut | Açıklama |
+|-------|----------|
+| `docker --version` | Docker sürümünü gösterir. |
+| `docker info` | Docker sistemi hakkında detaylı bilgi verir. |
+
+---
+
+## Image (İmaj) İşlemleri
+
+| Komut | Açıklama |
+|-------|----------|
+| `docker pull nginx` | Docker Hub'dan Nginx image'ını indirir. |
+| `docker images` | Bilgisayardaki image'ları listeler. |
+| `docker search nginx` | Docker Hub'da image arar. |
+| `docker build -t myapp .` | Dockerfile kullanarak image oluşturur. |
+| `docker rmi <image>` | Image'ı siler. |
+
+---
+
+## Container İşlemleri
+
+| Komut | Açıklama |
+|-------|----------|
+| `docker run nginx` | Yeni bir container oluşturur ve çalıştırır. |
+| `docker run -d nginx` | Container'ı arka planda çalıştırır. |
+| `docker run -it ubuntu bash` | Ubuntu container'ını etkileşimli terminal ile başlatır. |
+| `docker ps` | Çalışan container'ları listeler. |
+| `docker ps -a` | Tüm container'ları listeler. |
+| `docker stop <container>` | Container'ı durdurur. |
+| `docker start <container>` | Durdurulan container'ı yeniden başlatır. |
+| `docker restart <container>` | Container'ı yeniden başlatır. |
+| `docker rm <container>` | Container'ı siler. |
+
+---
+
+## Log ve Yönetim Komutları
+
+| Komut | Açıklama |
+|-------|----------|
+| `docker logs <container>` | Container loglarını görüntüler. |
+| `docker exec -it <container> bash` | Çalışan container'ın içine girer. |
+| `docker inspect <container>` | Container hakkında ayrıntılı bilgi verir. |
+
+---
+
+## Dosya Kopyalama
+
+| Komut | Açıklama |
+|-------|----------|
+| `docker cp file.txt <container>:/tmp/` | Bilgisayardan container'a dosya kopyalar. |
+| `docker cp <container>:/tmp/file.txt .` | Container'dan bilgisayara dosya kopyalar. |
+
+---
+
+## Volume ve Network
+
+| Komut | Açıklama |
+|-------|----------|
+| `docker volume ls` | Mevcut volume'leri listeler. |
+| `docker network ls` | Mevcut network'leri listeler. |
+
+---
+
+## Docker Compose
+
+| Komut | Açıklama |
+|-------|----------|
+| `docker compose up -d` | Servisleri arka planda başlatır. |
+| `docker compose down` | Servisleri durdurur ve kaldırır. |
+| `docker compose ps` | Çalışan servisleri listeler. |
+| `docker compose logs` | Servis loglarını görüntüler. |
+
+---
+
+## Sonuç
+
+Bu komutlar, Docker ile image oluşturma, container çalıştırma, logları inceleme, dosya paylaşımı, volume ve network yönetimi ile Docker Compose kullanımında en sık kullanılan temel komutlardır.
