@@ -1,18 +1,19 @@
-# Build Docker Image
+# Docker Image Oluşturma
 
-## Purpose
+## Amaç
 
-Learn how to build a Docker image using a Dockerfile.
+Dockerfile kullanarak bir Docker image'ı oluşturmayı öğrenmek.
 
-## Commands
+## Kullanılan Komutlar
 
 ```bash
 docker build -t mywebsite .
 docker images
 ```
 
-## What I Learned
+## Öğrendiklerim
 
-- Docker Image
-- Docker Build
-- Image Tagging
+- Docker Image kavramını
+- `docker build` komutu ile image oluşturmayı
+- `-t` parametresi ile image'a isim (tag) vermeyi
+- `docker images` komutu ile oluşturulan image'ları listelemeyi
